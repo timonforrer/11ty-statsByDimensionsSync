@@ -1,0 +1,17 @@
+{
+  "name": "11ty-statsbydimensionssync",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/timonforrer/11ty-statsByDimensionsSync",
+  "author": "timonforrer <timon.forrer@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "rm -rf dist && npx @11ty/eleventy --serve",
+    "build": "rm -rf dist && npx @11ty/eleventy"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "1.0.0",
+    "@11ty/eleventy-img": "^1.0.0"
+  }
+}
