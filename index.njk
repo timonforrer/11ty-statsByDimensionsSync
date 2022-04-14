@@ -1,15 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  {% set width = 1920 %}
-  {% set height = 1080 %}
-  {% set image_url = 'https://source.unsplash.com/random/' + width + 'x' + height %}
-  {% include 'image.njk' %}
-</body>
-</html>
+---
+layout: base.njk
+pagination:
+  alias: unsplash_id
+  data: unsplash_ids
+  size: 1
+---
+
+{% set width = 1920 %}
+{% set height = 1080 %}
+{% set image_url = 'https://source.unsplash.com/' + unsplash_id + '/' + width + 'x' + height %}
+{% include 'image.njk' %}
